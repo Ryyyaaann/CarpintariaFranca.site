@@ -510,6 +510,13 @@ a {
         font-size: 2.5rem;
     }
 
+    p .modescuro_button_titulo {
+        color: #ffffff;
+        font-size: 20 px;
+        
+        
+    }
+
     .section-title {
         font-size: 2rem;
     }
@@ -628,6 +635,13 @@ a {
         font-size: 1.5rem; 
     }
     
+    .modescuro_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: end;
+    }
+
     #hero p {
         transform: translateX(0); 
         padding: 0 15px; 
@@ -679,4 +693,59 @@ a {
   100% {
     background-position: -150%;
   }
+}
+
+/* Modo escuro: opções de configuração*/
+
+.chavemodescuro{
+    width: 65px;
+    height: 30px;
+    background-color: #a76d17;
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+}
+
+.chavemodescuro .indicador{
+    width: 30px;
+    height: 30px;
+    background-color: #c59d5f;
+    border-radius: 50%;
+    transform: scale(.8);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.chavemodescuro.dark {
+    background-color: #c59d5f;
+}
+
+.chavemodescuro.dark .indicador{
+    left: 35px;
+    background-color: #a76d17;
+}
+
+body{
+    transition: .8s;
+}
+
+body.dark {
+    background-color: #000000;
+    transition: .8s
+}
+
+body.dark p,
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark div,
+body.dark section#servicos,
+body.dark section#portfolio,
+body.dark nav,
+body.dark ul,
+body.dark li {
+    background-color: #000000;
+    color:#fff;
 }
