@@ -1,12 +1,10 @@
 :root {
-    /* Original Palette */
     --primary-blue: #0d2c44;
     --accent-gold: #c59d5f;
     --light-bg: #f4f0ec;
     --dark-text-orig: #333333;
     --light-text-orig: #ffffff;
 
-    /* Theming Variables (Light Mode Default) */
     --c-bg-page: #ffffff;
     --c-bg-card: #ffffff;
     --c-bg-section-light: var(--light-bg);
@@ -27,13 +25,12 @@
     --c-nav-text: var(--light-text-orig);
     --c-nav-text-scrolled: var(--dark-text-orig);
     
-    /* Fonts */
     --font-title: 'Montserrat', sans-serif;
     --font-body: 'Lora', serif;
 }
 
 body.dark {
-    /* Redefine variables for Dark Mode */
+
     --c-bg-page: #121212;
     --c-bg-card: #1e1e1e;
     --c-bg-section-light: #1f1f1f;
@@ -240,7 +237,6 @@ body.dark .btn-secondary:hover {
 }
 
 .main-nav {
-    /* Adicionado para garantir que a navbar não ocupe todo o espaço */
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
@@ -587,20 +583,18 @@ body.dark .btn-secondary:hover {
   }
 }
 
-/* --- Fixed Theme Toggle Container --- */
 .theme-toggle-container {
     position: fixed;
-    top: 28px; /* Alinha verticalmente com o conteúdo do header */
+    top: 28px; 
     right: 30px;
-    z-index: 1001; /* Fica acima do header (que tem z-index 1000) */
+    z-index: 1001; 
     transition: top 0.4s ease-in-out;
 }
 
 .header-scrolled ~ .theme-toggle-container {
-    top: 20px; /* Ajusta a posição quando o header encolhe */
+    top: 20px; 
 }
 
-/* --- Dark Mode Toggle Switch --- */
 .chavemodescuro{
     width: 65px;
     height: 30px;
